@@ -1,7 +1,7 @@
 ﻿namespace Avanade.SubTCSE.Projeto.Domain.Aggregates
 {
-    public abstract record BaseEntity<TId>
+    public record BaseEntity<Tid>
     {
-        public TId Id { get; init; }
+        public Tid Id { get; set; }
     }
 }

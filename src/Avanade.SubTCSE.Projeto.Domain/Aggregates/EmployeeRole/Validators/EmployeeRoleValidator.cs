@@ -6,11 +6,11 @@ namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.EmployeeRole.Validators
     {
         public EmployeeRoleValidator()
         {
-            RuleSet("new", () => 
+            RuleSet("new", () =>
             {
                 RuleFor(e => e.RoleName)
                 .NotEmpty()
-                .WithMessage("{PropertyName} can not by empty");
+                .WithMessage("{PropertyName} can not be empty");
             });
         }
     }
